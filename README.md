@@ -15,10 +15,10 @@ A lightweight and powerful **Bash script** designed to perform a quick security 
 ## 📂 Directory Structure
 ```plaintext
 linux-system-security-checker/
-├── security-checker.sh   # The main Bash script
-├── README.md             # Documentation
+├── security-checker.sh
+├── README.md
 ├── LICENSE
-└── example-report.txt    # Example output of the security report
+└── example-report.txt
 ```
 
 ## 📖 Usage
