@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Starting Linux System Security Check..."
 echo "---------------------------------------"
 
