@@ -1,0 +1,22 @@
+Security Report - Thu Dec 21 2024
+---------------------------------------
+Firewall Status:
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22                         ALLOW       Anywhere
+---------------------------------------
+File Permissions:
+/etc/passwd -rw-r--r--
+/etc/shadow -rw-------
+/etc/hosts -rw-r--r--
+---------------------------------------
+Inactive Users:
+root
+admin
+---------------------------------------
+Top 10 Running Services by Memory Usage:
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1 102400  9280 ?       Ss   12:00   0:03 /sbin/init
+mysql      172  0.5  1.5 125000 11000 ?       Ssl  12:00   0:30 /usr/sbin/mysqld
