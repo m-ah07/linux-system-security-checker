@@ -45,11 +45,11 @@ linux-system-security-checker/
     
 4. View the generated report:
 
-- Text Report:
-    ```bash
-    cat security-report.txt
-    ```
-- HTML Report: Open `security-report.html` in your favorite browser.
+    - Text Report:
+        ```bash
+        cat security-report.txt
+        ```
+    - HTML Report: Open `security-report.html` in your favorite browser.
 
 ## 🖼️ Example Report
 
