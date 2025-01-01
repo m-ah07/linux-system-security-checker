@@ -6,6 +6,7 @@ Status: active
 To                         Action      From
 --                         ------      ----
 22                         ALLOW       Anywhere
+443                        ALLOW       Anywhere
 ---------------------------------------
 File Permissions:
 /etc/passwd -rw-r--r--
@@ -13,10 +14,18 @@ File Permissions:
 /etc/hosts -rw-r--r--
 ---------------------------------------
 Inactive Users:
-root
-admin
+guest
+backup
 ---------------------------------------
 Top 10 Running Services by Memory Usage:
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.1 102400  9280 ?       Ss   12:00   0:03 /sbin/init
 mysql      172  0.5  1.5 125000 11000 ?       Ssl  12:00   0:30 /usr/sbin/mysqld
+apache     205  0.3  0.8 100000  8000 ?       S    12:00   0:15 /usr/sbin/apache2
+---------------------------------------
+System Updates:
+The following packages can be updated:
+ - openssl
+ - libc6
+ - curl
+---------------------------------------
