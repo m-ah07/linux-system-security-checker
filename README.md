@@ -1,15 +1,15 @@
 # 🛡️ Linux System Security Checker
 
-A lightweight and powerful **Bash script** designed to perform a quick security audit of your Linux system. This tool checks for firewall status, sensitive file permissions, inactive users, and running services, then generates a detailed security report.
+A lightweight and powerful **Bash script** designed to perform a quick security audit of your Linux system. This tool checks for firewall status, sensitive file permissions, inactive users, running services, and available updates, then generates a detailed security report in both text and HTML formats.
 
----
 
 ## 🚀 Features
 - 🔥 **Firewall Status**: Checks if UFW is active and lists current rules.
-- 🔐 **Sensitive File Permissions**: Verifies permissions for critical files like `/etc/passwd` and `/etc/shadow`.
-- 👤 **Inactive User Accounts**: Detects unused or suspicious accounts.
-- 🛠️ **Service Monitoring**: Lists top 10 running services based on memory usage.
-- 📝 **Detailed Report**: Automatically generates a comprehensive security report.
+- 🔐 **Sensitive File Permissions**: Verifies permissions for critical files like `/etc/passwd`, `/etc/shadow`, and `/etc/hosts`.
+- 👤 **Inactive User Accounts**: Detects unused or suspicious accounts based on login shells.
+- 🛠️ **Service Monitoring**: Lists top 10 running services by memory usage.
+- ⬆️ **System Updates**: Checks for available package updates to keep your system secure.
+- 📄 **Detailed Report**: Automatically generates a comprehensive security report in both **text** and **HTML** formats for better visualization.
 
 
 ## 📂 Directory Structure
@@ -18,6 +18,8 @@ linux-system-security-checker/
 ├── security-checker.sh
 ├── README.md
 ├── LICENSE
+├── security-report.txt
+├── security-report.html
 └── example-report.txt
 ```
 
@@ -43,9 +45,11 @@ linux-system-security-checker/
     
 4. View the generated report:
 
+- Text Report:
     ```bash
     cat security-report.txt
     ```
+- HTML Report: Open `security-report.html` in your favorite browser.
 
 ## 🖼️ Example Report
 
@@ -74,7 +78,15 @@ Top 10 Running Services by Memory Usage:
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.1 102400  9280 ?       Ss   12:00   0:03 /sbin/init
 mysql      172  0.5  1.5 125000 11000 ?       Ssl  12:00   0:30 /usr/sbin/mysqld
+---------------------------------------
+System Updates:
+apt package-manager is up-to-date.
 ```
+
+### HTML Format:
+
+Open `security-report.html` for a visually styled version of the report with structured sections and improved readability.
+
 
 ## 🛠️ Contributing
 
@@ -83,6 +95,15 @@ We welcome contributions to improve this tool! Here's how you can help:
 - 🐛 **Report issues:** Found a bug? Open an issue and let us know.
 - 🌟 **Suggest features:** Have an idea for improvement? We'd love to hear it.
 - 🔧 **Submit pull requests:** Contribute code directly to the repository.
+
+## 🛠️ Future Improvements
+- 📅 **Task Scheduling:** Add cron job integration for automated periodic checks.
+- 🕵️ **Vulnerability Scanner:** Integrate CVE vulnerability scanning.
+- 🎨 **Enhanced HTML Report:** Include charts and visual statistics.
+- 🛡️ **Customizable Rules:** Allow users to define custom rules for security checks.
+
+
+
 
 ## 🌟 Show Your Support
 If you found this project helpful, please consider giving it a ⭐ on GitHub. Your support means the world to us!
