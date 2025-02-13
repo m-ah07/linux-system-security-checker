@@ -27,7 +27,7 @@ linux-system-security-checker/
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/marwan-ahmed-23/linux-system-security-checker.git
+    git clone https://github.com/m-ah07/linux-system-security-checker.git
     cd linux-system-security-checker
     ```
 
