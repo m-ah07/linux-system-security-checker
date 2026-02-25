@@ -1,5 +1,6 @@
 Security Report - Thu Dec 21 2024
----------------------------------------
+========================================
+
 Firewall Status:
 Status: active
 
@@ -13,9 +14,18 @@ File Permissions:
 /etc/shadow -rw-------
 /etc/hosts -rw-r--r--
 ---------------------------------------
-Inactive Users:
+Inactive Users (cannot login):
+daemon
+bin
+sys
+sync
+games
+...
+---------------------------------------
+Users with Login Shells (can login):
+root
+admin
 guest
-backup
 ---------------------------------------
 Top 10 Running Services by Memory Usage:
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND

@@ -6,9 +6,10 @@ A lightweight and powerful **Bash script** designed to perform a quick security 
 ## Features
 - **Firewall Status**: Checks if UFW is active and lists current rules.
 - **Sensitive File Permissions**: Verifies permissions for critical files like `/etc/passwd`, `/etc/shadow`, and `/etc/hosts`.
-- **Inactive User Accounts**: Detects unused or suspicious accounts based on login shells.
+- **Inactive User Accounts**: Lists users with no login shell (e.g. `/bin/false`, `nologin`).
+- **Users with Login Shells**: Lists users who can log in (security audit).
 - **Service Monitoring**: Lists top 10 running services by memory usage.
-- **System Updates**: Checks for available package updates to keep your system secure.
+- **System Updates**: Checks for available package updates (supports apt, dnf, yum).
 - **Detailed Report**: Automatically generates a comprehensive security report in both **text** and **HTML** formats for better visualization.
 
 
@@ -70,7 +71,13 @@ File Permissions:
 /etc/shadow -rw-------
 /etc/hosts -rw-r--r--
 ---------------------------------------
-Inactive Users:
+Inactive Users (cannot login):
+daemon
+bin
+sys
+...
+---------------------------------------
+Users with Login Shells (can login):
 root
 admin
 ---------------------------------------
@@ -80,7 +87,7 @@ root         1  0.0  0.1 102400  9280 ?       Ss   12:00   0:03 /sbin/init
 mysql      172  0.5  1.5 125000 11000 ?       Ssl  12:00   0:30 /usr/sbin/mysqld
 ---------------------------------------
 System Updates:
-apt package-manager is up-to-date.
+System is up-to-date.
 ```
 
 ### HTML Format:
